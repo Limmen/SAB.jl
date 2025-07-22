@@ -28,3 +28,4 @@ Manifest.toml        # Optional: ignore if you want reproducible environments
 
 *.csv
 *.posg
+*.csv

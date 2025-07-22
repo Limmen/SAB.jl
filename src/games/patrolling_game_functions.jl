@@ -12,8 +12,7 @@ function state_to_idx(s::Tuple{Int,Int}, t_A::Integer)::Int
     return (location - 1) * t_A + time
 end
 
-function idx_to_state(idx::Integer, N::Integer, t_A::Integer)::Tuple{Int,Int}
-    # This prevents errors for idx=0 or invalid inputs
+function idx_to_state(idx::Integer, N::Integer, t_A::Integer)::Tuple{Int,Int}    
     @assert idx > 0
     location = div(idx - 1, t_A) + 1
     time = (idx - 1) % t_A + 1

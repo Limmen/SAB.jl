@@ -123,8 +123,7 @@
         V = zeros(num_beliefs)
         V_new = similar(V)
 
-        for i in 1:max_iterations
-            # This now calls the sparse-aware version of the function
+        for i in 1:max_iterations            
             auxillary_games = [auxillary_game_sparse(V, gamma, b_idx, num_a1, num_pi2, R_b, T_b_sparse) for b_idx in 1:num_beliefs]
 
             for b_idx in 1:num_beliefs

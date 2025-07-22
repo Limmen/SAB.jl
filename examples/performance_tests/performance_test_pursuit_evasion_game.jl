@@ -3,12 +3,12 @@ Pkg.activate(".")
 using SAB
 
 gamma = 0.99
-N = 1
+N = 2
 p_c = 0.5
 
-n = 5
+n = 1
 m = 1
-delta_threshold = 0.1
+delta_threshold = 0.01
 max_iterations = 1000
 
 b1 = PursuitEvasionGame.b1(N)

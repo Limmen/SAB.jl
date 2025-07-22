@@ -5,7 +5,7 @@ using SAB
 
 num_obs = 10
 gamma = 0.99
-N = 2
+N = 4
 p_a = 0.2
 
 b1 = AptGame.b1(N)
@@ -17,4 +17,4 @@ Z = AptGame.observation_tensor(num_obs, N)
 T = AptGame.transition_tensor(N, p_a)
 R = AptGame.reward_tensor(N)
 
-OsPosgFile.generate_os_posg_game_file(length(S), length(A1), length(A2), length(O), Z, T, R, gamma, b1, "apt_game.posg")
+OsPosgFile.generate_os_posg_game_file(length(S), length(A1), length(A2), length(O), Z, T, R, gamma, b1, "apt_game_4.posg")
