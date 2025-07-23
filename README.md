@@ -14,12 +14,8 @@ Pkg.test() # Run tests
 
 ## Author & Maintainer
 
-Kim Hammar <kimham@kth.se>
+Anonymous
 
 ## Copyright and license
 
 [LICENSE](LICENSE.md)
-
-Creative Commons
-
-(C) 2025, Kim Hammar
